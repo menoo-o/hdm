@@ -22,7 +22,7 @@ export default function HeroSection() {
     }}
     ></div>
       {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-4 2xl:px-8">
+      <div className="relative z-10 container mx-auto px-4 md:px-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
           {/* Left Content */}
           <div className="space-y-8 text-gray-900">
@@ -88,9 +88,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <Link href="https://wa.me/923248518400" className="absolute bottom-4 right-4 bg-[var(--safety-orange)] text-black" target="_blank" rel="noopener noreferrer">
+      {/* <Link href="https://wa.me/923248518400" className="absolute bottom-4 right-4 bg-[var(--safety-orange)] text-black" target="_blank" rel="noopener noreferrer">
         clik me
-    </Link>
+    </Link> */}
     </section>
 
     
