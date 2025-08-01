@@ -2,11 +2,12 @@ import RotatingScrollImage from "@/components/ImageScroll";
 
 const AboutSection = () => {
   return (
-    <section className="relative bg-white py-16 px-6 md:px-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center relative z-10">
+    // mx-auto px-4 md:px-20
+   <section className="relative bg-[var(--bg-ivory)] py-16 overflow-hidden">
+    <div className="relative z-10 container mx-auto px-4 md:px-20 grid md:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
         <div className="text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--dark-moss)] text-900 mb-6">
             About Hafiz Dal Mills
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">

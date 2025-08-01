@@ -1,28 +1,83 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone } from "lucide-react"
 import Image from "next/image"
+import navLinks from "@/data/NavLinks" // Assuming you have a NavLinks data file
+
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies 
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
+  // nav gsap
+  const navRef = useRef<HTMLElement | null>(null);
+  const lastScrollY = useRef(0);
+  const isHidden = useRef(false);
 
-  const navLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "What we do", href: "#whatwedo" },
-    { name: "Proteins", href: "#proteins" },
-    { name: "Products", href: "#products" },  
-]
+
+  useGSAP(()=>{
+        const nav = navRef.current;
+          // Slide the navbar back down into view (if it was hidden).
+        const showNavbar = () => {
+            if (!isHidden.current) return;
+            isHidden.current = false;
+            gsap.to(nav, {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            ease: 'power2.out',
+            });
+        };
+
+        // Slide the navbar up and out of sight.
+        const hideNavbar = () => {
+            if (isHidden.current) return;
+            isHidden.current = true;
+            gsap.to(nav, {
+            opacity: 0,
+            y: -60,
+            duration: 0.4,
+            ease: 'power2.in',
+            });
+        };
+
+        // Watch how the user scrolls — and decide what animations to trigger
+        const handleScroll = () => {
+        // if (isOpen) return;
+
+        const currentY = window.scrollY;
+        const goingDown = currentY > lastScrollY.current;
+
+        if (goingDown && currentY > window.innerHeight * 0.5) {
+            hideNavbar();
+        } else if (!goingDown) {
+            showNavbar();
+        }
+
+        lastScrollY.current = currentY;
+        };
+      
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+        }, [])
 
   return (
     <>
       {/* Main Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+     <nav 
+        className="fixed top-0 left-0 right-0 z-50 bg-white/40 backdrop-blur-lg border border-white/30 shadow-lg rounded-b-xl backdrop-saturate-150" 
+        ref={navRef}
+      >
         <div className="container mx-auto px-4 md:px-20">
           <div className="flex items-center justify-between h-16 lg:h-20">
 
@@ -82,23 +137,6 @@ export default function Navigation() {
           {/* Mobile Menu Sheet */}
           <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-xl transform transition-transform duration-300 ease-in-out">
             <div className="flex flex-col h-full">
-              {/* Header */}
-              <div className="flex items-center justify-between p-4 border-b border-gray-200">
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">P</span>
-                  </div>
-                  <span className="text-xl font-bold text-gray-900">PulseWholesale</span>
-                </div>
-                <button
-                  onClick={toggleMobileMenu}
-                  className="p-2 rounded-md text-gray-700 hover:text-amber-600 hover:bg-gray-100 transition-colors duration-200"
-                  aria-label="Close mobile menu"
-                >
-                  <X className="h-6 w-6" />
-                </button>
-              </div>
-
               {/* Navigation Links */}
               <div className="flex-1 py-6">
                 <div className="space-y-1">

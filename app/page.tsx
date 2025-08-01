@@ -12,6 +12,7 @@ export default function Home() {
       <AboutSection />
       <AboutSection />
       <AboutSection />
+      
     </div>
     </>
   );
