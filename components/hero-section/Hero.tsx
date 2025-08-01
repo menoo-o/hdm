@@ -66,10 +66,6 @@ export default function HeroSection() {
               <div className="flex flex-wrap gap-6 text-sm text-gray-600">
                 <span className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                  ISO Certified
-                </span>
-                <span className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
                   Farm Direct Sourcing
                 </span>
                 <span className="flex items-center gap-2">

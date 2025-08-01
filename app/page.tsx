@@ -1,5 +1,6 @@
 import AboutSection from "@/components/about-section/About";
 import HeroSection from "@/components/hero-section/Hero";
+import TrustedBrands from "@/components/trusted-section/TrustByBrands";
 
 export default function Home() {
   return (
@@ -9,9 +10,8 @@ export default function Home() {
      
       {/* Additional content can be added here */}
       <AboutSection />
-      <AboutSection />
-      <AboutSection />
-      <AboutSection />
+      <TrustedBrands />
+
       
     </div>
     </>
