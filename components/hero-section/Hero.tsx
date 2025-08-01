@@ -8,9 +8,9 @@ export default function HeroSection() {
       {/* Background Image - positioned to the right */}
      {/* Mobile Background Image */}
     <div
-    className="absolute inset-0 bg-left bg-no-repeat opacity-65 block md:hidden"
+    className="absolute inset-0 bg-bottom-left bg-no-repeat opacity-65 block md:hidden"
     style={{
-        backgroundImage: "url('/hero4.png')", // Mobile-optimized image
+        backgroundImage: "url('/hero3.png')", // Mobile-optimized image
     }}
     ></div>
 
@@ -21,6 +21,7 @@ export default function HeroSection() {
         backgroundImage: "url('/hero.png')", // Desktop-optimized image
     }}
     ></div>
+
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 md:px-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
