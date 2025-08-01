@@ -1,3 +1,4 @@
+import AboutSection from "@/components/about-section/About";
 import HeroSection from "@/components/hero-section/Hero";
 
 export default function Home() {
@@ -5,7 +6,12 @@ export default function Home() {
     <>
     <div className="min-h-screen bg-gray-50">
       <HeroSection />
+     
       {/* Additional content can be added here */}
+      <AboutSection />
+      <AboutSection />
+      <AboutSection />
+      <AboutSection />
     </div>
     </>
   );

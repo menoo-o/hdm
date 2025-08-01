@@ -29,10 +29,17 @@ export default function HeroSection() {
           <div className="space-y-8 text-gray-900">
             {/* Main Headline */}
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-[var(--dark-moss)]">
-              Premium
-              <span className="block text-[var(--safety-orange)]">Pulses</span>
-              <span className="block text-[var(--dark-moss)]">Wholesale</span>
+              Wholesale 
+              <span className="block text-[var(--safety-orange)]">Essentials </span>
+              <span className="block text-[var(--dark-moss)]">for Every Shelf</span>
             </h1>
+
+             {/* Subheadline */}
+              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-lg">
+                From pulses to flour — we power businesses that feed millions
+              </p>
+
+
             {/* Call to Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Button
