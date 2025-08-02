@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Phone, ArrowRight, Bean } from "lucide-react"
 // import Link from "next/link";
 
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[var(--bg-ivory)]">
@@ -95,6 +96,7 @@ export default function HeroSection() {
       {/* <Link href="https://wa.me/923248518400" className="absolute bottom-4 right-4 bg-[var(--safety-orange)] text-black" target="_blank" rel="noopener noreferrer">
         clik me
     </Link> */}
+    
     </section>
 
     

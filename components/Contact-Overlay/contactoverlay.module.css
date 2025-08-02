@@ -1,0 +1,174 @@
+/* 🔹 Fullscreen blurred background */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-contact-overlay);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-6);
+  /* font-family: var(--font-main); */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* 🔹 White panel (main form box) */
+.panel {
+  background: var(--dark-moss);
+  color: var(--text);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  width: min(100%, 900px);
+  max-height: 95vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  /* font-family: var(--font-main); */
+}
+
+/* 🔹 Close button */
+.closeBtn {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  font-size: var(--font-size-md);
+  background: none;
+  border: none;
+  color: var(--bg-ivory);
+  cursor: pointer;
+}
+
+/* 🔹 Title & Subtitle */
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+   color: var( --vanilla );
+  /* font-family: var(--font-accent); */
+}
+
+.subtitle {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-5);
+}
+
+
+/* 🔹 Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.inputRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.input,
+.textarea {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--vanilla);
+  font-family: var(--font-main);
+  background: #fff;
+  color: #000;
+}
+
+.textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* 🔹 Submit button */
+.submitBtn {
+  margin-top: var(--space-4);
+  background: var(--bg-ivory);
+  color: var(--dark-moss);
+  font-weight: var(--font-weight-bold);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  transition: background 0.25s ease;
+}
+
+.submitBtn:hover {
+  background: var(--black-olive);
+  color: var( --vanilla );
+}
+
+
+/* Error state for input and textarea */
+.inputError,
+.textareaError {
+  border-color: #e74c3c;
+  background-color: #fff0f0;
+  outline: none;
+}
+
+/* Focus state still shows red border on error */
+.inputError:focus,
+.textareaError:focus {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+/* Error message text */
+.error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Optional: success state border */
+.inputSuccess,
+.textareaSuccess {
+  border-color: #2ecc71;
+  background-color: #f6fffa;
+}
+
+/* Disabled button */
+.submitBtn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Error highlight for unselected services */
+.servicesError {
+  border: 1px solid #e74c3c;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 48, 24, 0.6);
+  padding: 0.5rem;
+  margin-bottom: var(--space-4);
+  
+}
+
+
+.successMsg {
+  color: #2ecc71;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.errorMsg {
+  color: #e74c3c;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}

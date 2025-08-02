@@ -8,7 +8,7 @@ const AboutSection = () => {
         {/* Text Content */}
         <div className="text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--dark-moss)] text-900 mb-6">
-            About Hafiz Dal Mills
+           Hafiz Dal Mills
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             <span className="font-semibold">Hafiz Dal Mills (HDM)</span> — established in 1980 — is one of Punjab and Rawalpindi’s

@@ -1,5 +1,6 @@
 import AboutSection from "@/components/about-section/About";
 import HeroSection from "@/components/hero-section/Hero";
+import ProductSection from "@/components/products-section/product";
 import TrustedBrands from "@/components/trusted-section/TrustByBrands";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
      
       {/* Additional content can be added here */}
       <AboutSection />
+      {/* <ProductSection /> */}
       <TrustedBrands />
 
       

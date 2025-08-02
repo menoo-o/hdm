@@ -44,6 +44,47 @@
 }
 
 :root {
+
+   /* Font Sizes */
+   --font-size-lg: clamp(2rem, 4vw, 3rem);   /* Hero / H1 */
+  --font-size-md: clamp(1.25rem, 2vw, 2rem);    /* Subheadings / H2 */
+   --font-size-sm: clamp(1rem, 1.10vw, 1.125rem);      /* Body / Paragraph */
+   --font-size-xs: clamp(0.75rem, 0.85vw, 1.05rem);      /* Body / Paragraph */
+
+  /* Font Weights */
+  --font-weight-extrabold: 900;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  /* Spacing scale (like Tailwind's) */
+  --space-0: 0rem;
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+
+  /* Z-Index Layers */
+  --z-base: 1;
+  --z-sticky: 10;
+  --z-dropdown: 50;
+  --z-fixed: 100; /* Navbar */
+  --z-overlay: 1000; /* Nav Overlay */
+  --z-contact-overlay: 1150; /* Contact overlay */
+
+/* Border radius (if you plan to use rounded elements) */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 28px;
+
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -83,6 +124,7 @@
   --nyanza: #E8FFD7;
   --safety-orange: #F97A00;
   --vanilla: #FFF4A4;
+  --black-olive: #252919;
 }
 
 .dark {

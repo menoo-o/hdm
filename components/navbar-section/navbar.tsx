@@ -2,9 +2,11 @@
 
 import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Phone } from "lucide-react"
+import { Menu, X} from "lucide-react"
 import Image from "next/image"
 import navLinks from "@/data/NavLinks" // Assuming you have a NavLinks data file
+import { useOverlayStore } from '@/stores/useOverlay';
+
 
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -12,6 +14,7 @@ gsap.registerPlugin(useGSAP); // register the hook to avoid React version discre
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+   const openContact = useOverlayStore((s) => s.openContact);
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
@@ -108,10 +111,13 @@ export default function Navigation() {
 
             {/* Desktop Contact Button */}
             <div className="hidden lg:block">
-              <Button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded-full">
-                <Phone className="mr-2 h-4 w-4" />
-                Contact
-              </Button>
+              <button 
+                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded-full"
+                 onClick={openContact}  
+              >
+               
+                Enquiry
+              </button>
             </div>
 
             {/* Mobile Hamburger Menu */}
@@ -159,8 +165,8 @@ export default function Navigation() {
                   className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 rounded-full"
                   onClick={toggleMobileMenu}
                 >
-                  <Phone className="mr-2 h-4 w-4" />
-                  Contact Us
+                
+                Enquiry
                 </Button>
               </div>
             </div>

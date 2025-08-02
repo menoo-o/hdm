@@ -17,7 +17,7 @@ export default function RotatingFlowers() {
     const ctx = gsap.context(() => {
       // Top image: rotates clockwise
       gsap.to(topFlowerRef.current, {
-        rotate: 35,
+        rotate: 10,
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top bottom",
@@ -28,7 +28,7 @@ export default function RotatingFlowers() {
 
       // Bottom image: rotates counter-clockwise
       gsap.to(bottomFlowerRef.current, {
-        rotate: -35,
+        rotate: -10,
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top bottom",

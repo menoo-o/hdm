@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navigation from "@/components/navbar-section/navbar";
+import ContactOverlay from "@/components/Contact-Overlay/Contact-form";
+import FooterBlock from "@/components/footer-section/footer";
+
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,7 +33,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navigation />
+        <ContactOverlay />
         {children}
+        <FooterBlock />
       </body>
     </html>
   );
