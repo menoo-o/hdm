@@ -60,9 +60,11 @@ export default function TrustedBrands() {
       <div className="container mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-stone-800 mb-4">Trusted by Leading Brands</h2>
+             <h2 className="text-3xl md:text-4xl font-bold text-[var(--dark-moss)] mb-4">
+          Trusted by Leading Brands
+     </h2>
           <p className="text-stone-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-            Join thousands of companies that rely on our solutions to drive their success
+            Join thousands of companies that rely on us for quality and service. Our trusted partners include industry leaders across various sectors.
           </p>
         </div>
 
@@ -77,13 +79,13 @@ export default function TrustedBrands() {
             <div ref={firstRowRef} className="flex items-center gap-8 md:gap-12 lg:gap-16 flex-shrink-0">
               {brands.map((brand, index) => (
                 <div key={`first-${index}`} className="flex-shrink-0 group">
-                  <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24">
+                  <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-28 lg:h-28">
                     <div className="w-full h-full rounded-full bg-transparent shadow-sm p-3 md:p-4 transition-all duration-300 group-hover:shadow-md group-hover:scale-105">
                       <Image
                         src={brand.logo || "/placeholder.svg"}
                         alt={`${brand.name} logo`}
-                        width={80}
-                        height={80}
+                        width={90}
+                        height={90}
                         className="w-full h-full object-contain rounded-full filter transition-all duration-300"
                         loading="lazy"
                       />
@@ -96,13 +98,13 @@ export default function TrustedBrands() {
             <div ref={secondRowRef} className="flex items-center gap-8 md:gap-12 lg:gap-16 flex-shrink-0">
               {brands.map((brand, index) => (
                 <div key={`second-${index}`} className="flex-shrink-0 group">
-                  <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24">
+                  <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-28 lg:h-28">
                     <div className="w-full h-full rounded-full bg-transparent shadow-sm p-3 md:p-4 transition-all duration-300 group-hover:shadow-md group-hover:scale-105">
                       <Image
                         src={brand.logo || "/placeholder.svg"}
                         alt={`${brand.name} logo`}
-                        width={80}
-                        height={80}
+                        width={90}
+                        height={90}
                         className="w-full h-full object-contain rounded-full filter transition-all duration-300"
                         loading="lazy"
                       />

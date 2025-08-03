@@ -7,7 +7,7 @@ export default function FooterBlock() {
    <footer className="relative bg-[var(--bg-ivory)] text-[var(--black-olive)]">
   {/* Background Image */}
   <div
-    className="absolute inset-0 w-full h-full opacity-20 bg-no-repeat bg-cover bg-center pointer-events-none"
+    className="absolute inset-0 w-full h-full opacity-5 bg-no-repeat bg-cover bg-center pointer-events-none"
     style={{ backgroundImage: "url('/footer-bg.png')" }}
   />
 

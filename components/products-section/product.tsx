@@ -16,7 +16,7 @@ const ProductSection = () => {
     ></div>
      {/* Actual Content */}
     <div className="relative z-10 max-w-7xl mx-auto text-center mb-12">
-     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+     <h2 className="text-3xl md:text-4xl font-bold text-[var(--dark-moss)] mb-4">
           Our Speciality Products
      </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -36,11 +36,11 @@ const ProductSection = () => {
                 src={product.image}
                 alt={product.title}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <div className="p-6 text-left">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-800 text-[var(--dark-moss)] mb-2">
                 {product.title}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
