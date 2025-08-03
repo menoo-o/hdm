@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+
 
 export default function FooterBlock() {
   return (
