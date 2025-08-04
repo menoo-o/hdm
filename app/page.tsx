@@ -3,6 +3,8 @@ import HeroSection from "@/components/hero-section/Hero";
 import ProductSection from "@/components/products-section/product";
 import TrustedBrands from "@/components/trusted-section/TrustByBrands";
 import PureFood from "@/components/pure-section/PureFood";
+import More from "@/components/products-section/More";
+
 export default function Home() {
   return (
     <>
@@ -12,8 +14,10 @@ export default function Home() {
       {/* Additional content can be added here */}
       <AboutSection />
       <ProductSection />
+      <More />
       <PureFood />
       <TrustedBrands />
+
 
       
     </div>

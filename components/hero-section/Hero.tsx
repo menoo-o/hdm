@@ -17,15 +17,15 @@ export default function HeroSection() {
 
     {/* Desktop Background Image */}
     <div
-    className="hidden md:block md:absolute md:inset-0 md:bg-contain md:bg-left md:bg-no-repeat md:opacity-80"
+    className="hidden md:block md:absolute md:inset-0 md:bg-cover md:bg-left md:bg-no-repeat md:opacity-80"
     style={{
-        backgroundImage: "url('/hero-bg.png')", // Desktop-optimized image
+        backgroundImage: "url('/hero-bg1.png')", // Desktop-optimized image
     }}
     ></div>
 
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 md:px-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-25">
           {/* Left Content */}
           <div className="space-y-8 text-gray-900">
             {/* Main Headline */}
