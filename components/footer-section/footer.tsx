@@ -1,7 +1,6 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react"
 import Link from "next/link"
 
-
 export default function FooterBlock() {
   return (
    <footer className="relative bg-[var(--bg-ivory)] text-[var(--black-olive)]">

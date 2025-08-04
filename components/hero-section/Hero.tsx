@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Phone, ArrowRight, Bean } from "lucide-react"
+import { Phone, ArrowRight } from "lucide-react"
 // import Link from "next/link";
 
 
@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image - positioned to the right */}
      {/* Mobile Background Image */}
     <div
-    className="absolute inset-0 bg-bottom-left bg-no-repeat opacity-65 block md:hidden"
+    className="absolute inset-0 bg-bottom-right bg-no-repeat opacity-40 block md:hidden"
     style={{
         backgroundImage: "url('/hero3.png')", // Mobile-optimized image
     }}
@@ -17,9 +17,9 @@ export default function HeroSection() {
 
     {/* Desktop Background Image */}
     <div
-    className="hidden md:block md:absolute md:inset-0 md:bg-cover md:bg-right md:bg-no-repeat md:opacity-90"
+    className="hidden md:block md:absolute md:inset-0 md:bg-contain md:bg-left md:bg-no-repeat md:opacity-80"
     style={{
-        backgroundImage: "url('/hero.png')", // Desktop-optimized image
+        backgroundImage: "url('/hero-bg.png')", // Desktop-optimized image
     }}
     ></div>
 
@@ -52,14 +52,14 @@ export default function HeroSection() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
 
-              <Button
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white font-semibold px-8 py-4 text-lg rounded-full transform hover:scale-105 transition-all duration-200 bg-transparent"
               >
                 <Bean className="mr-2 h-5 w-5" />
                  Browse Products
-              </Button>
+              </Button> */}
             </div>
 
             {/* Trust Indicators */}
