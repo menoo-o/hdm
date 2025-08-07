@@ -5,7 +5,9 @@ import { Phone, ArrowRight } from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen md:min-h-screen flex items-center overflow-hidden bg-[var(--bg-ivory)]">
+   <section className="pt-16 h-[calc(100vh-4rem)] flex items-center bg-[var(--bg-ivory)]">
+
+
 
      {/* Mobile Background Image */}
       <div
@@ -16,12 +18,13 @@ export default function HeroSection() {
     ></div>
 
     {/* Desktop Background Image */}
-    <div
-    className="hidden md:block md:absolute md:inset-0 md:bg-cover md:bg-left md:bg-no-repeat md:opacity-80"
-    style={{
-        backgroundImage: "url('/hero-bg1.png')", // Desktop-optimized image
-    }}
-    ></div>
+<div
+  className="hidden md:block md:absolute md:top-22 md:left-0 md:w-full md:h-[calc(100vh-4rem)] md:bg-cover md:bg-top-left md:bg-no-repeat md:opacity-80"
+  style={{
+    backgroundImage: "url('/hero-bg1.png')",
+  }}
+></div>
+
 
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 md:px-4 3xl:px-20 ">
@@ -78,16 +81,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-600 animate-bounce">
-        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gray-600 rounded-full mt-2 animate-pulse"></div>
-        </div>
-      </div>
 
-      {/* <Link href="https://wa.me/923248518400" className="absolute bottom-4 right-4 bg-[var(--safety-orange)] text-black" target="_blank" rel="noopener noreferrer">
-        clik me
-    </Link> */}
+
+  
     
     </section>
 
