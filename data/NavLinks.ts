@@ -1,8 +1,8 @@
   const navLinks = [
+    { name: "Pulses", href: "#pulses" },
+    { name: "Rice", href: "#rice" },
     { name: "About Us", href: "#about" },
-    { name: "What we do", href: "#whatwedo" },
-    { name: "Proteins", href: "#proteins" },
-    { name: "Products", href: "#products" },  
+    { name: "Contact Us", href: "/contact" },  
 ]
 
 export default navLinks
