@@ -28,7 +28,7 @@ export default function HeroSection() {
 
 
       {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-4 md:px-16 3xl:px-20 ">
+      <div className="relative z-10 container mx-auto px-4 md:px-8 3xl:px-20 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-24 md:py-12 relative -translate-y-18 md:-translate-y-0">
 
           {/* Left Content */}
