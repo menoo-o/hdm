@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function HeroSection() {
   return (
-   <section className="pt-16 h-[calc(100vh-4rem)] flex items-center bg-[var(--bg-ivory)]">
+   <section className="pt-16 h-[calc(100vh-4rem)] flex items-center bg-white">
 
 
 
@@ -20,7 +20,7 @@ export default function HeroSection() {
 
     {/* Desktop Background Image */}
 <div
-  className="hidden md:block md:absolute md:top-22 md:left-0 md:w-full md:h-[calc(100vh-4rem)] md:bg-cover md:bg-top-left md:bg-no-repeat md:opacity-80"
+  className="hidden md:block md:absolute md:top-22 md:left-12 md:w-full md:h-[calc(100vh-4rem)] md:bg-cover md:bg-top-left md:bg-no-repeat md:opacity-80"
   style={{
     backgroundImage: "url('/hero-bg1.png')",
   }}

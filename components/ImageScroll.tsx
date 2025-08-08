@@ -9,47 +9,49 @@ import Image from "next/image"
 gsap.registerPlugin(ScrollTrigger)
 
 export default function RotatingFlowers() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const topFlowerRef = useRef<HTMLImageElement>(null)
-  const bottomFlowerRef = useRef<HTMLImageElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null);
+  const topFlowerRef = useRef<HTMLImageElement>(null);
+  const bottomFlowerRef = useRef<HTMLImageElement>(null);
 
   useGSAP(() => {
     const ctx = gsap.context(() => {
       // Top image: rotates clockwise
       gsap.to(topFlowerRef.current, {
-        rotate: 10,
+        rotate: 60,
+        ease: "none",
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top bottom",
           end: "bottom top",
           scrub: true,
         },
-      })
+      });
 
       // Bottom image: rotates counter-clockwise
       gsap.to(bottomFlowerRef.current, {
-        rotate: -10,
+        rotate: -60,
+        ease: "none",
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top bottom",
           end: "bottom top",
           scrub: true,
         },
-      })
-    }, containerRef)
+      });
+    }, containerRef);
 
-    return () => ctx.revert()
-  }, [])
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <div ref={containerRef} className="relative w-80 h-80 mx-auto">
+    <div ref={containerRef} className="relative w-[26rem] h-[26rem] mx-auto">
       {/* Bottom flower (rotates anti-clockwise) */}
       <Image
         ref={bottomFlowerRef}
         src="/index-bg.png"
         alt="Bottom Flower"
         fill
-        className="object-contain z-0 scale-140"
+        className="object-contain z-0 scale-125"
       />
 
       {/* Top flower (rotates clockwise) */}
@@ -58,8 +60,8 @@ export default function RotatingFlowers() {
         src="/index-forward.png"
         alt="Top Flower"
         fill
-        className="object-contain z-10 scale-80"
+        className="object-contain z-10 scale-110"
       />
     </div>
-  )
+  );
 }
