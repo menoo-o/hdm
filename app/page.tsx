@@ -1,9 +1,10 @@
 import AboutSection from "@/components/about-section/About";
 import HeroSection from "@/components/hero-section/Hero";
-import ProductSection from "@/components/products-section/product";
+// import ProductSection from "@/components/products-section/product";
 import TrustedBrands from "@/components/trusted-section/TrustByBrands";
 import PureFood from "@/components/pure-section/PureFood";
-import More from "@/components/products-section/More";
+import More from "@/components/Product-Range/More";
+import ProductBlock from "@/components/Product-Range/products-section";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
      
       {/* Additional content can be added here */}
       <AboutSection />
-      <ProductSection />
+      <ProductBlock />
       <More />
       <PureFood />
       <TrustedBrands />
