@@ -4,6 +4,7 @@ import Navigation from "@/components/navbar-section/navbar";
 import ContactOverlay from "@/components/Contact-Overlay/Contact-form";
 import FooterBlock from "@/components/footer-section/footer";
 import Image from "next/image";
+import NavbarComp from "@/components/Navbar-block/NavbarBlock";
 
 
 import "./globals.css";
@@ -33,7 +34,8 @@ export default function RootLayout({
       <body
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <Navigation />
+      {/* <Navigation /> */}
+      <NavbarComp />
       <ContactOverlay />
 
       {/* WhatsApp Icon */}

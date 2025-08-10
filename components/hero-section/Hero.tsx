@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function HeroSection() {
   return (
-   <section className="pt-16 h-[calc(100vh-4rem)] flex items-center bg-white">
+   <section className="pt-24 h-[calc(100vh-4rem)] flex items-center bg-black">
 
 
 
@@ -19,16 +19,16 @@ export default function HeroSection() {
     ></div>
 
     {/* Desktop Background Image */}
-<div
-  className="hidden md:block md:absolute md:top-22 md:left-12 md:w-full md:h-[calc(100vh-4rem)] md:bg-cover md:bg-top-left md:bg-no-repeat md:opacity-80"
-  style={{
-    backgroundImage: "url('/hero-bg1.png')",
-  }}
-></div>
+    <div
+      className="hidden md:block md:absolute md:top-22 md:left-12 md:w-full md:h-[calc(115vh-4rem)] 2xl:md:h-[calc(95vh-4rem)] md:bg-cover md:bg-top-left md:bg-no-repeat md:opacity-80"
+      style={{
+        backgroundImage: "url('/hero-bg1.png')",
+      }}
+    ></div>
 
 
       {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-4 md:px-16 3xl:px-20 ">
+      <div className="relative z-10 container mx-auto px-4 md:px-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-24 md:py-12 relative -translate-y-18 md:-translate-y-0">
 
           {/* Left Content */}
@@ -64,23 +64,7 @@ export default function HeroSection() {
         </div>
 
 
-            {/* Trust Indicators */}
-            <div className="pt-8 border-t border-gray-200 md:block hidden">
-              <div className="flex flex-wrap gap-6 text-sm text-gray-600">
-                <span className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                  Farm Direct Sourcing
-                </span>
-                <span className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                  Quality Guaranteed
-                </span>
-                <span className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                  Timely Delivery
-                </span>
-              </div>
-            </div>
+          
           </div>
 
           {/* Right side - Image space (handled by background) */}

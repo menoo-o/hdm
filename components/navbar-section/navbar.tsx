@@ -85,12 +85,12 @@ export default function Navigation() {
           <div className="flex items-center justify-between h-16 lg:h-20">
 
             {/* Logo */}
-           <div className="flex items-center h-16 lg:h-20">
+           <div className="flex items-center h-8 md:h-16">
               <Image 
                 src="/logo.svg"
                 alt="HDM Logo"
-                width={74}
-                height={74}
+                width={75}
+                height={70}
                 className="object-contain sm:w-24 sm:h-24"
               />
            </div>
