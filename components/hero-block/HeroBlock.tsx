@@ -14,7 +14,7 @@ export default function HeroSection() {
           fill
           className="object-cover object-center translate-y-30"
           priority
-          quality={90}
+          quality={80}
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/30 to-transparent" />
