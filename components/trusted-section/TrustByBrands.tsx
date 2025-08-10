@@ -57,13 +57,14 @@ export default function TrustedBrands() {
 
   return (
     <section className="w-full py-16 md:py-24 bg-gradient-to-b from-stone-50 to-amber-50/30">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-             <h2 className="text-3xl md:text-4xl font-bold text-[var(--dark-moss)] mb-4">
-          Trusted by Leading Brands
-     </h2>
-          <p className="text-stone-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-900 text-[var(--dark-moss)] mb-6 leading-tight">
+            Trusted by Leading
+            <span className="text-orange-600 block">Brands</span>
+          </h2>
+          <p className="text-600 text-[var(--light-moss)] text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Join thousands of companies that rely on us for quality and service. Our trusted partners include industry leaders across various sectors.
           </p>
         </div>

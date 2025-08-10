@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Navigation from "@/components/navbar-section/navbar";
 import ContactOverlay from "@/components/Contact-Overlay/Contact-form";
 import FooterBlock from "@/components/footer-section/footer";
 import Image from "next/image";
 import NavbarComp from "@/components/Navbar-block/NavbarBlock";
+import Link from "next/link";
 
 
 import "./globals.css";
@@ -39,12 +39,12 @@ export default function RootLayout({
       <ContactOverlay />
 
       {/* WhatsApp Icon */}
-      <a
+      <Link
         href="https://wa.me/923000000000" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-8 right-8 z-[var(--z-contact-overlay)]"
+        className="fixed bottom-6 right-8 z-[var(--z-contact-overlay)]"
       >
         <Image
           src="/whatsapp.svg"
@@ -53,7 +53,7 @@ export default function RootLayout({
           height={48}
           className="w-12 h-12 cursor-pointer hover:scale-105 transition-transform"
         />
-      </a>
+      </Link>
 
       {children}
       <FooterBlock />

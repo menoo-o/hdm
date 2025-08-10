@@ -124,7 +124,7 @@
   /* my color-pallete  */
   --bg-ivory: #F5F5E7;
   --dark-moss: #525B37;
-  --light-moss: #cad6a5;
+  --light-moss: #8fa354;
   --nyanza: #E8FFD7;
   --safety-orange: #F97A00;
   --vanilla: #FFF4A4;
@@ -174,3 +174,7 @@
   }
 }
 
+
+html {
+  scroll-behavior: smooth;
+}

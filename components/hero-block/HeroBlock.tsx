@@ -58,7 +58,10 @@ export default function HeroSection() {
              {/* Call to Action Buttons */}
              <div className="flex flex-col sm:flex-row gap-8 md:pt-6 pt-28 md:pb-4">
                <Link
-                 href="#_"
+                 href="https://wa.me/923000000000" // Replace with your WhatsApp number
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Chat on WhatsApp"
                  className="relative inline-flex items-center px-12 py-2 overflow-hidden text-lg font-semibold text-amber-600 border-2 border-amber-600 rounded-full group hover:text-white hover:bg-amber-50 transition-colors"
                >
                  <span className="absolute left-0 block w-full h-0 transition-all bg-amber-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease-in-out"></span>
@@ -71,8 +74,6 @@ export default function HeroSection() {
                </Link>
              </div>
      
-     
-               
                </div>
      
                {/* Right side - Image space (handled by background) */}
