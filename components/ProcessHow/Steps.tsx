@@ -23,7 +23,7 @@ export default function ProcessSection() {
       icon: <Factory className="w-8 h-8" />,
       title: "Commercial Processing",
       description:
-        "Our ISO-certified facilities process large volumes while maintaining strict quality controls and traceability for wholesale distribution.",
+        "Our facility process large volumes while maintaining strict quality controls and traceability for wholesale distribution.",
       highlight: "ISO Certified",
     },
     {

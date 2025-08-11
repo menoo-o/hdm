@@ -85,7 +85,7 @@ export default function FooterBlock() {
                   </div>
                   <div className="text-sm">
                     <p className="font-medium text-[var(--light-moss)]">+92 51 555 1060</p>  
-                    <p className="font-medium text--[var(--light-moss)]]">+92 331 813 5543</p>
+                    <p className="font-medium text-[var(--light-moss)]">+92 331 813 5543</p>
                     <p className="font-medium text-[var(--light-moss)]">+92 334 835 0623</p>
                   </div>
                 </div>

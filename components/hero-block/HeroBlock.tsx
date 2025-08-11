@@ -14,7 +14,7 @@ export default function HeroSection() {
           fill
           className="object-cover object-center translate-y-30"
           priority
-          quality={80}
+          quality={95}
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/30 to-transparent" />
@@ -56,21 +56,20 @@ export default function HeroSection() {
      
                  {/* Call to Action Buttons */}
              {/* Call to Action Buttons */}
-             <div className="flex flex-col sm:flex-row gap-8 md:pt-6 pt-28 md:pb-4">
+             <div className="flex flex-col sm:flex-row gap-8 md:pt-6 pt-8 md:pb-4">
                <Link
-                 href="https://wa.me/923000000000" // Replace with your WhatsApp number
+                 href="https://wa.me/923318135543" // Replace with your WhatsApp number
                  target="_blank"
                  rel="noopener noreferrer"
                  aria-label="Chat on WhatsApp"
-                 className="relative inline-flex items-center px-12 py-2 overflow-hidden text-lg font-semibold text-amber-600 border-2 border-amber-600 rounded-full group hover:text-white hover:bg-amber-50 transition-colors"
-               >
+                 className="relative inline-flex items-center px-12 py-2 overflow-hidden text-lg font-semibold text-amber-600 border-2 border-amber-600 group  hover:text-white hover:bg-amber-50 transition-colors">
                  <span className="absolute left-0 block w-full h-0 transition-all bg-amber-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease-in-out"></span>
      
                  <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
-                   <ArrowRight className="w-5 h-5 text-white" />
+                   <ArrowRight className="w-5 h-5 text-[var(--bg-ivory)]" />
                  </span>
      
-                 <span className="relative flex items-center z-10"> Get Wholesale Quote </span>
+                 <span className="relative flex items-start z-10"> Get Wholesale Quote </span>
                </Link>
              </div>
      
