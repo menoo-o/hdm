@@ -38,7 +38,7 @@ export default function HeroSection() {
         {/* Content Container */}
           <div className="relative z-20 -mt-60 md:-mt-20 space-y-4 md:space-y-2 text-gray-900 md:pt-8">
 
-             <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-24 md:py-12 relative -mt-36">
+             <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-24 md:py-12 relative -mt-36 md:mt-0">
      
                {/* Left Content */}
                <div className="space-y-4 md:space-y-2 text-gray-900 md:pt-8">
