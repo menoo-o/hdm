@@ -12,7 +12,7 @@ export default function HeroSection() {
           src="/mobile-bg6.png"
           alt="Variety of pulses, legumes and grains in bowls and sacks"
           fill
-          className="object-cover object-center translate-y-30"
+          className="object-cover object-center translate-y-44"
           priority
           quality={95}
         />
@@ -36,12 +36,12 @@ export default function HeroSection() {
 
 
         {/* Content Container */}
-          <div className="relative z-20 -mt-60 md:-mt-20 space-y-4 md:space-y-2 text-gray-900 md:pt-8">
+          <div className="relative z-20 md:-mt-20 space-y-4 md:space-y-2 text-gray-900 md:pt-8 md:pl-12 pl-2 ">
 
-             <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-24 md:py-12 relative -mt-36 md:mt-0">
+             <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-24 md:py-12 relative -mt-28 md:mt-0">
      
                {/* Left Content */}
-               <div className="space-y-4 md:space-y-2 text-gray-900 md:pt-8">
+               <div className="space-y-2 text-gray-900 md:pt-8">
                  {/* Main Headline */}
                  <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-[var(--dark-moss)]">
                    Wholesale 
@@ -57,7 +57,7 @@ export default function HeroSection() {
      
                  {/* Call to Action Buttons */}
              {/* Call to Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-8 md:pt-6 pt-8 md:pb-4 pr-8 pl-2">
+            <div className="flex flex-col sm:flex-row gap-8 md:pt-6 pt-8 md:pb-4 pr-12 md:pr-0">
 
                <Link
                  href="https://wa.me/923318135543" // Replace with your WhatsApp number
