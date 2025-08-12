@@ -7,6 +7,7 @@ import TrustedBrands from "@/components/trusted-section/TrustByBrands";
 import ProductBlock from "@/components/Product-Range/products-section";
 import HeroSection from "@/components/hero-block/HeroBlock"
 import ProcessSection from "@/components/ProcessHow/Steps";
+import PulsesPage from "@/components/pulses/Pulses-Block";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <ProductBlock />
       <AboutSection />
       <ProcessSection />
+     
       
       <TrustedBrands />
 
