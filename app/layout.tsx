@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import ContactOverlay from "@/components/Contact-Overlay/Contact-form";
 import FooterBlock from "@/components/footer-section/footer";
 import Image from "next/image";
+
 import NavbarComp from "@/components/Navbar-block/NavbarBlock";
 import Link from "next/link";
 
