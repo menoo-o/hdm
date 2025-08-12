@@ -70,7 +70,7 @@ const features = [
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                   {/* Product Image */}
                   <div className="relative">
-                    <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-8 lg:p-12">
+                    <div className="bg-white rounded-3xl p-8 lg:p-12">
                       <Image
                         src="/products/besan.webp"
                         alt="Premium besan flour in wooden bowl with scoop"
@@ -90,8 +90,8 @@ const features = [
                       <Badge variant="outline" className="mb-4 border-yellow-200 text-yellow-700">
                         Single Premium Variant
                       </Badge>
-                      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Premium Besan</h2>
-                      <p className="text-lg text-gray-600 leading-relaxed">
+                       <h2 className="text-4xl md:text-5xl font-bold text-[var(--dark-moss)] mb-6">Premium Besan</h2>
+                      <p className="text-lg text-600 text-[var(--light-moss)] leading-relaxed">
                         Our Premium Besan is crafted from the finest chickpeas, meticulously selected and traditionally
                         stone-ground to achieve the perfect fineness. This superior gram flour delivers exceptional taste,
                         texture, and consistency that professional chefs and food manufacturers trust.
@@ -106,8 +106,8 @@ const features = [
                             {feature.icon}
                           </div>
                           <div>
-                            <h3 className="font-semibold text-gray-900 mb-1">{feature.title}</h3>
-                            <p className="text-sm text-gray-600">{feature.description}</p>
+                            <h3 className="font-semibold text-900 text-[var(--light-moss)] mb-1">{feature.title}</h3>
+                            <p className="text-sm text-600 text-[var(--light-moss)]">{feature.description}</p>
                           </div>
                         </div>
                       ))}
@@ -116,16 +116,16 @@ const features = [
                     {/* Quick Stats */}
                     <div className="grid grid-cols-3 gap-6 py-6 border-y border-gray-200">
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-gray-900">22-24g</div>
-                        <div className="text-sm text-gray-600">Protein/100g</div>
+                        <div className="text-2xl font-bold text-900 text-[var(--dark-moss)]">22-24g</div>
+                        <div className="text-sm text-600 text-[var(--light-moss)]">Protein/100g</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-gray-900">80-100</div>
-                        <div className="text-sm text-gray-600">Mesh Fineness</div>
+                        <div className="text-2xl font-bold text-900 text-[var(--dark-moss)]">80-100</div>
+                        <div className="text-sm text-600 text-[var(--light-moss)]">Mesh Fineness</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-gray-900">12</div>
-                        <div className="text-sm text-gray-600">Months Shelf Life</div>
+                        <div className="text-2xl font-bold text-900 text-[var(--dark-moss)]">12</div>
+                        <div className="text-sm text-600 text-[var(--light-moss)]">Months Shelf Life</div>
                       </div>
                     </div>
                   </div>
@@ -137,8 +137,8 @@ const features = [
             <section className="py-20 px-4 sm:px-6 lg:px-8">
               <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Traditional Milling Excellence</h2>
-                  <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-900 text-[var(--dark-moss)] mb-4">Traditional Milling Excellence</h2>
+                  <p className="text-lg text-600 text-[var(--light-moss)] max-w-3xl mx-auto">
                     Our time-honored process ensures every batch of Premium Besan meets the highest standards of fineness,
                     purity, and flavor.
                   </p>
@@ -149,8 +149,8 @@ const features = [
                     <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
                       <Leaf className="w-8 h-8 text-yellow-600" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Premium Selection</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-xl font-bold text-900 text-[var(--dark-moss)] mb-4">Premium Selection</h3>
+                    <p className="text-600 text-[var(--light-moss)]">
                       Only the finest, plump chickpeas are selected from certified farms, ensuring consistent quality and
                       superior taste.
                     </p>
@@ -160,8 +160,8 @@ const features = [
                     <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
                       <Factory className="w-8 h-8 text-yellow-600" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Stone Grinding</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-xl font-bold text-900 text-[var(--dark-moss)] mb-4">Stone Grinding</h3>
+                    <p className="text-600 text-[var(--light-moss)]">
                       Traditional stone mills preserve the natural oils and nutrients while achieving the perfect fineness for
                       professional applications.
                     </p>
@@ -171,8 +171,8 @@ const features = [
                     <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
                       <Shield className="w-8 h-8 text-yellow-600" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Quality Assurance</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-xl font-bold text-900 text-[var(--dark-moss)] mb-4">Quality Assurance</h3>
+                    <p className="text-600 text-[var(--light-moss)]">
                       Rigorous testing ensures purity, protein content, and mesh consistency meet our premium standards before
                       packaging.
                     </p>
