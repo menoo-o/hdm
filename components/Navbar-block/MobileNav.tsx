@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import { X, Facebook, MessageCircle, Phone, Mail, MapPin, ChevronRight } from "lucide-react"
-import ButtonLink from "../Button/ButtonLink"
+import { useEffect } from "react";
+
 
 interface MobileMenuProps {
   isMenuOpen: boolean
@@ -26,6 +27,14 @@ export default function MobileHamburgerMenu({ isMenuOpen, closeMenu, openContact
       color: "bg-blue-500 hover:bg-blue-600",
     },
   ]
+
+  useEffect(() => {
+  if (isMenuOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+}, [isMenuOpen]);
 
   return (
     <>
