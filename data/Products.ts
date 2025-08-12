@@ -68,9 +68,9 @@ const productsData: Product[] = [
   },
   {
     id: 9,
-    title: "Brown Beans (Chitri)",
-    description: "Popular Pakistani variety, used in mixed dals and gravies.",
-    image: "/products/chitri-lobia.jpg",
+    title: "Red Tajik Lobia",
+    description: "Popular Red Beans variety, used in mixed dals and gravies.",
+    image: "/products/tajik-lobia.webp",
     protein: "21g per 100g",
     cookTime: "40–50 mins",
   },
