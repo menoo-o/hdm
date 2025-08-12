@@ -2,12 +2,12 @@
 
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import productsData from "@/data/Products"
+import riceProducts from "@/data/RiceData"
 
 import Image from "next/image"
 
 
-export default function PulsesPage() {
+export default function RicePage() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
 
   return (
@@ -18,9 +18,11 @@ export default function PulsesPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/products/pulses.jpg')`,
+            backgroundImage: `url('/rice/rice-banner.jpeg')`,
           }}
         />
+         {/* Overlay */}
+       <div className="absolute inset-0 bg-black/40" /> 
 
        
         {/* Content */}
@@ -32,31 +34,31 @@ export default function PulsesPage() {
               
             </div>
             
-            <h1 className="text-6xl md:text-7xl font-bold mb-4 tracking-tight">Pulses</h1>
+            <h1 className="text-6xl md:text-7xl font-bold mb-4 tracking-tight">Rice</h1>
             <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto leading-relaxed">
-              Premium quality pulses and lentils, sourced with care since 1980
+              Finest basmati rice, handpicked for exceptional aroma and taste.
             </p>
             <div className="mt-8 w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-500 mx-auto rounded-full" />
           </div>
         </div>
       </section>
 
-      {/* Pulses Grid */}
+      {/* Rice Grid */}
       <section className="py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[var(--dark-moss)] mb-6">Our Premium Collection</h2>
             <p className="text-xl text-700 text-[var(--light-moss)] max-w-3xl mx-auto leading-relaxed">
-              Discover our carefully curated selection of pulses and lentils, each variety chosen for its exceptional
-              quality, nutritional value, and authentic taste.
-            </p>
+                Discover our premium selection of rice varieties, each chosen for its exceptional aroma, long-grain quality, and authentic taste, sourced with care since 1980.
+           </p>
+
             <div className="mt-8 w-32 h-1 bg-gradient-to-r from-amber-400 to-orange-500 mx-auto rounded-full" />
           </div>
 
 {/* Grid */}
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-  {productsData.map((product) => (
+  {riceProducts.map((product) => (
     <Card
       key={product.id}
       className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white"
