@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react";
 
 export type ProductRangeSectionProps = {
   title: string
@@ -17,10 +17,6 @@ export type ProductRangeSectionProps = {
     label: string
     href: string
   }
-  secondaryCta?: {
-    label: string
-    href: string
-  }
 }
 
 export default function ProductRangeSection({
@@ -30,7 +26,7 @@ export default function ProductRangeSection({
   imageSrc,
   stats,
   primaryCta,
-  secondaryCta,
+
   reverse
 }: ProductRangeSectionProps) {
   return (
@@ -77,34 +73,61 @@ export default function ProductRangeSection({
             )}
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
-                <a href={primaryCta.href}>
-                  {primaryCta.label}
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
-              </Button>
-              {secondaryCta && (
-                <Button asChild size="lg" variant="outline">
-                  <a href={secondaryCta.href}>{secondaryCta.label}</a>
-                </Button>
-              )}
-            </div>
+            <div className="flex flex-col sm:flex-row gap-4 md:pr-0 sm:justify-start justify-center">
+  <Link
+    href={primaryCta.href}
+    aria-label={`Explore ${primaryCta.label}`}
+    className="
+      relative inline-flex items-center px-12 py-2 overflow-hidden text-lg font-semibold
+      border-2 transition-colors
+      text-amber-600 border-amber-600
+      bg-white
+      sm:bg-transparent sm:hover:bg-amber-50 sm:hover:text-white
+      group
+    "
+  >
+    {/* Background overlay for hover (desktop only) */}
+    <span
+      className="
+        absolute left-0 block w-full h-0 bg-amber-600 opacity-100
+        sm:transition-all sm:duration-400 sm:ease-in-out
+        sm:group-hover:h-full sm:top-0 top-0
+      "
+    ></span>
+
+    {/* Arrow — visible by default on mobile, slides in on desktop hover */}
+    <span
+      className="
+        absolute right-0 flex items-center justify-start w-10 h-10
+        transform translate-x-0
+        sm:translate-x-full sm:duration-300 sm:ease
+        sm:group-hover:translate-x-0
+      "
+    >
+      <ArrowRight className="w-5 h-5 text-amber-600 sm:text-[var(--bg-ivory)]" />
+    </span>
+
+    {/* Label */}
+    <span className="relative z-10">{primaryCta.label}</span>
+  </Link>
+</div>
+
           </div>
         </div>
 
         {/* Image Side */}
-       <div
-          className={`relative ${reverse ? "lg:order-1" : "lg:order-2"}`}
-        >
-          <Image
-            src={imageSrc}
-            alt={`${highlight} product image`}
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+      <div
+  className={`relative ${reverse ? "lg:order-1" : "lg:order-2"} h-72 sm:h-88 lg:h-auto`}
+>
+  <Image
+    src={imageSrc}
+    alt={`${highlight} product image`}
+    fill
+    className="object-cover"
+    priority
+  />
+</div>
+
 
       </div>
     </section>

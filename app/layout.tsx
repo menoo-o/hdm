@@ -40,7 +40,7 @@ export default function RootLayout({
 
       {/* WhatsApp Icon */}
       <Link
-        href="https://wa.me/923000000000" // Replace with your WhatsApp number
+        href="https://wa.me/923318135543" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"

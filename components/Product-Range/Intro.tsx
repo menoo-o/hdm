@@ -52,12 +52,7 @@ function IntroProductRange() {
                     </span>
                   </div>
                 </div>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="inline-flex items-center text-orange-600 font-medium">
-                    Explore Pulses
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </div>
-                </div>
+                
               </div>
             </div>
 
@@ -92,12 +87,7 @@ function IntroProductRange() {
                     </span>
                   </div>
                 </div>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="inline-flex items-center text-green-600 font-medium">
-                    Explore Rice
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </div>
-                </div>
+                
               </div>
             </div>
 
@@ -131,12 +121,7 @@ function IntroProductRange() {
                     </span>
                   </div>
                 </div>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="inline-flex items-center text-blue-600 font-medium">
-                    Explore Flour
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>
