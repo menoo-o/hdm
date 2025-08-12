@@ -32,12 +32,13 @@ export default function HeroSection() {
         quality={90}
     />
   </div>
-</div>
+       </div>
 
 
         {/* Content Container */}
-           <div className="relative z-10 container pt-8 lg:pt-0 mx-auto px-4 md:px-16">
-             <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-24 md:py-12 relative -translate-y-18 md:-translate-y-0">
+          <div className="relative z-20 -mt-60 md:-mt-20 space-y-4 md:space-y-2 text-gray-900 md:pt-8">
+
+             <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-24 md:py-12 relative -mt-36">
      
                {/* Left Content */}
                <div className="space-y-4 md:space-y-2 text-gray-900 md:pt-8">
@@ -56,7 +57,8 @@ export default function HeroSection() {
      
                  {/* Call to Action Buttons */}
              {/* Call to Action Buttons */}
-             <div className="flex flex-col sm:flex-row gap-8 md:pt-6 pt-8 md:pb-4">
+            <div className="flex flex-col sm:flex-row gap-8 md:pt-6 pt-8 md:pb-4 pr-8 pl-2">
+
                <Link
                  href="https://wa.me/923318135543" // Replace with your WhatsApp number
                  target="_blank"
