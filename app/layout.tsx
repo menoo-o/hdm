@@ -45,7 +45,7 @@ export default function RootLayout({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-6 right-8 z-[var(--z-contact-overlay)]"
+        className="fixed bottom-6 right-8 z-40"
       >
         <Image
           src="/whatsapp.svg"
