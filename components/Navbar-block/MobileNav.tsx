@@ -43,9 +43,10 @@ export default function MobileHamburgerMenu({ isMenuOpen, closeMenu, openContact
 
       {/* Side sheet menu */}
       <aside
-        className={`fixed top-0 right-0 h-full bg-gradient-to-br md:hidden from-[#faf9f6] to-[#f5f4f0] z-50 w-[85%] max-w-sm shadow-2xl transform transition-all duration-500 ease-out ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-full bg-gradient-to-br md:hidden 
+        from-[#faf9f6] to-[#f5f4f0] z-50 w-[85%] max-w-sm shadow-2xl 
+        transform transition-all duration-500 ease-out
+        ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         {/* Decorative Header */}
         <div className="relative bg-gradient-to-r from-[#252919] to-[#525B37] p-6 overflow-hidden">
