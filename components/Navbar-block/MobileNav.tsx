@@ -124,12 +124,7 @@ export default function MobileHamburgerMenu({ isMenuOpen, closeMenu, openContact
               <span className="text-gray-600">+92 51 555 1060</span>
             </div>
 
-            <div className="flex items-center space-x-3 text-sm">
-              <div className="w-8 h-8 bg-[#525B37]/10 rounded-lg flex items-center justify-center">
-                <Mail className="w-4 h-4 text-[#ff6b35]" />
-              </div>
-              <span className="text-gray-600">info@hafizdalmill.com</span>
-            </div>
+            
 
             <div className="flex items-start space-x-3 text-sm">
               <div className="w-8 h-8 bg-[#525B37]/10 rounded-lg flex items-center justify-center">
