@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { X, Facebook, MessageCircle, Phone, Mail, MapPin, ChevronRight } from "lucide-react"
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 
 interface MobileMenuProps {
@@ -28,18 +28,18 @@ export default function MobileHamburgerMenu({ isMenuOpen, closeMenu, openContact
     },
   ]
 
-  useEffect(() => {
-  if (isMenuOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
-}, [isMenuOpen]);
+//   useEffect(() => {
+//   if (isMenuOpen) {
+//     document.body.style.overflow = "hidden";
+//   } else {
+//     document.body.style.overflow = "";
+//   }
+// }, [isMenuOpen]);
 
   return (
     <>
       {/* Backdrop */}
-      <div className={`fixed  md:hidden inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300 ${ isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none" }`}  onClick={closeMenu} />
+      <div className={`fixed  md:hidden inset-0 bg-black/50 backdrop-blur-sm z-1200 transition-opacity duration-300 ${ isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none" }`}  onClick={closeMenu} />
 
       {/* Side sheet menu */}
       <aside

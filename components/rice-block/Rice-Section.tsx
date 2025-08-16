@@ -72,11 +72,11 @@ export default function RicePage() {
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute bottom-0 left-3 flex flex-wrap gap-2">
+        <div className="absolute bottom-1 left-3 flex flex-wrap gap-2">
          {product.variants?.map((variant, index) => (
           <span
             key={index}
-            className="bg-amber-100 text-amber-700 text-xs font-medium px-3 py-1 rounded-full shadow-sm"
+            className="bg-amber-100 text-700 text-[var(--safety-orange)] text-xs font-medium px-3 py-1 rounded-full shadow-sm"
           >
             {variant}
           </span>

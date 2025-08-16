@@ -70,7 +70,7 @@ export default function PulsesPage() {
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute bottom-0 left-3 flex flex-wrap gap-2">
+        <div className="absolute bottom-1 left-4 flex flex-wrap gap-2">
          {product.variants?.map((variant, index) => (
           <span
             key={index}
