@@ -39,7 +39,7 @@ export default function MobileHamburgerMenu({ isMenuOpen, closeMenu, openContact
   return (
     <>
       {/* Backdrop */}
-      <div className={`fixed  md:hidden inset-0 bg-black/50 backdrop-blur-sm z-1200 transition-opacity duration-300 ${ isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none" }`}  onClick={closeMenu} />
+      <div className={`fixed  md:hidden inset-0 bg-black/50 backdrop-blur-sm z-50 transition-opacity duration-300 ${ isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none" }`}  onClick={closeMenu} />
 
       {/* Side sheet menu */}
       <aside
