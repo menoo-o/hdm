@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { X, Facebook, MessageCircle, Phone, Mail, MapPin, ChevronRight } from "lucide-react"
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 
 interface MobileMenuProps {
@@ -28,13 +28,13 @@ export default function MobileHamburgerMenu({ isMenuOpen, closeMenu, openContact
     },
   ]
 
-  useEffect(() => {
-  if (isMenuOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
-}, [isMenuOpen]);
+//   useEffect(() => {
+//   if (isMenuOpen) {
+//     document.body.style.overflow = "hidden";
+//   } else {
+//     document.body.style.overflow = "";
+//   }
+// }, [isMenuOpen]);
 
   return (
     <>
